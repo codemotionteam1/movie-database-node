@@ -8,7 +8,7 @@ before_script:
   - npm install -g grunt-cli
 after_script:
   - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
-  - git remote add heroku git@heroku.com:movie-database-node.git
+  - git remote add heroku git@heroku.com:movie-database-team1.git
   - echo "Host heroku.com" >> ~/.ssh/config
   - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
   - echo "   CheckHostIP no" >> ~/.ssh/config
@@ -18,7 +18,6 @@ after_script:
   - yes | git push heroku master
 env:
   global:
-  - secure: ! 'oMQE0FSPxyi0G/eMlt6NRFfaKuEVQjcY/e28N/lncoIwb8hGylXjnmaQ6/ME
-      eicggmI+KJmrDJhz/O2KezoyyBDGABr8RhnilZ5cYQZyvorqsKJfnjw3kClG
-      TuLFRS+9XTi17m4ybUJGTYnBBhadX3csDuTuCj8+eh9vmnD9oGM='
-
+  - secure: ! 'FIjEajntajw8L6LNZSCyO1mylJpLFYzNITqttMwDfeUQfRZtPV2OVxoLB4Y8
+      pBd87QvU9PCg4CtyHm345xHRxzWSlu30XNRPA0D+0z6C674rr3xy8S0ez4hX
+      pZxkK5wX5gYM+j79noX5OowP6SXHjSyZ4uYjthIhYjV5zkwL4KA='
