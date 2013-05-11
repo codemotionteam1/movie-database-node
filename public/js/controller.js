@@ -9,6 +9,9 @@ function WelcomeCtrl () {
 function MoviesListCtrl ($scope, $location, moviesResponse) {
     'use strict';
     $scope.movies = moviesResponse.data;
+    console.log($scope.movies);
+    // filter:orderBy($scope.movies, "title");
+
     $scope.add = function () {
         $location.path('/movies/new');
     };
