@@ -50,3 +50,10 @@ app.get('/movies/:id', routes.getMovie);
 app.put('/movies/:id', routes.updateMovie);
 // delete is a reserved word
 app['delete']('/movies/:id', routes.deleteMovie);
+
+app.get('/actors', routes.getActors);
+app.post('/actors', routes.addActor);
+app.get('/actors/:id', routes.getActor);
+app.put('/actors/:id', routes.updateActor);
+// delete is a reserved word
+app['delete']('/actors/:id', routes.deleteActor);
